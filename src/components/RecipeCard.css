@@ -1,0 +1,25 @@
+.recipe-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.recipe-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-card-title {
+  margin: 10px 0;
+}
