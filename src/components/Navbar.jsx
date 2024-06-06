@@ -1,6 +1,7 @@
 import "./NavBar.css";
 /**
  * Some nav
+ * and more nav
  * @returns
  */
 function Navbar() {
