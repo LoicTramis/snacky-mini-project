@@ -1,0 +1,13 @@
+.Navbar {
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
