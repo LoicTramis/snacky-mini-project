@@ -1,4 +1,8 @@
 import "./NavBar.css";
+/**
+ * Some nav
+ * @returns
+ */
 function Navbar() {
     return (
         <nav className="Navbar">
