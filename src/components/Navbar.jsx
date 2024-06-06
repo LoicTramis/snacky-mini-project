@@ -1,9 +1,5 @@
 import "./NavBar.css";
-/**
- * Some nav
- * and more nav
- * @returns
- */
+
 function Navbar() {
     return (
         <nav className="Navbar">
