@@ -1,18 +1,41 @@
 .Navbar {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+  ul {
+    font-size: 1.4rem;
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
+    gap: 0 2rem;
+    width: 55%;
 
-    ul {
-        font-size: 1.4rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 30%;
-
-        .nav-link {
-            list-style-type: none;
-        }
+    li {
+      list-style-type: none;
+      display: flex;
     }
+
+    li:first-child {
+      flex-grow: 1;
+
+      input[type="text"] {
+        width: 100%;
+        padding: 0.6rem 1rem 0.6rem 2.5rem;
+        border-radius: 40px;
+        font-family: "Patua One", serif;
+
+        font-size: 1.2rem;
+
+        border: 1px solid var(--primary-color);
+        background-color: var(--stroke-weak);
+      }
+      input[type="text"]:focus {
+        border: 1px solid var(--stroke-weak);
+        background-color: var(--stroke-weak);
+      }
+    }
+  }
 }

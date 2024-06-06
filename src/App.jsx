@@ -1,7 +1,10 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
+import FormPage from "./components/FormPage";
+import ErrorPage from "./Pages/ErrorPage";
 
 function App() {
   /*
@@ -10,7 +13,11 @@ function App() {
   return (
     <>
       <Header />
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<FormPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
       <Footer />
     </>
   );

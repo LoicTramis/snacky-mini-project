@@ -7,34 +7,15 @@ import FormPage from "./FormPage";
 import ErrorPage from "../Pages/ErrorPage";
 
 function Header() {
-    return (
-        <header className="Header">
-            <section className="logoTitle">
-                <img
-                    src={SnackyLogo}
-                    alt="Snacky logo"
-                    width={48}
-                />
-                <h1>Snacky</h1>
-            </section>
-            <Navbar />
-
-            <Routes>
-                <Route
-                    path="/"
-                    element={<HomePage />}
-                />
-                <Route
-                    path="/about"
-                    element={<FormPage />}
-                />
-                <Route
-                    path="*"
-                    element={<ErrorPage />}
-                />
-            </Routes>
-        </header>
-    );
+  return (
+    <header className="Header">
+      <section className="logoTitle">
+        <img src={SnackyLogo} alt="Snacky logo" width={48} />
+        <h1>Snacky</h1>
+      </section>
+      <Navbar />
+    </header>
+  );
 }
 
 export default Header;
