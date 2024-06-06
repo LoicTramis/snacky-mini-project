@@ -10,8 +10,7 @@ html {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Chewy", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -19,6 +18,7 @@ h3 {
 }
 
 p,
-li {
+li,
+h3 {
   font-family: "Patua One", serif;
 }
