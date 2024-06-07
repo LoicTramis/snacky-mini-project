@@ -8,13 +8,14 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <main className="main-content">
-        <h1>SNAKY APP</h1>
+        <h1>Welcome to the Recipe App</h1>
         <div className="recipe-cards-container">
           {recipes.map((recipe) => (
             <RecipeCard
               key={recipe.id}
               title={recipe.dish}
               image={recipe.picture}
+              category={recipe.category}
             />
           ))}
         </div>
