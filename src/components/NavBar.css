@@ -1,41 +1,53 @@
 .Navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-
-  ul {
-    font-size: 1.4rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: center;
-    gap: 0 2rem;
-    width: 55%;
 
-    li {
-      list-style-type: none;
-      display: flex;
+    ul {
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 0 2rem;
+        width: 55%;
+
+        li {
+            width: 100%;
+            height: 100%;
+            list-style-type: none;
+            display: flex;
+            a {
+                align-content: center;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+            }
+            a.active {
+                background-color: var(--primary-color);
+            }
+        }
+
+        li:first-child {
+            flex-grow: 1;
+
+            input[type="text"] {
+                width: 100%;
+                padding: 0.6rem 1rem 0.6rem 2.5rem;
+                border-radius: 40px;
+                font-family: "Patua One", serif;
+
+                font-size: 1.2rem;
+
+                border: 1px solid var(--primary-color);
+                background-color: var(--stroke-weak);
+            }
+            input[type="text"]:focus {
+                border: none;
+                border: 6px dotted blue;
+                background-color: var(--stroke-weak);
+            }
+        }
     }
-
-    li:first-child {
-      flex-grow: 1;
-
-      input[type="text"] {
-        width: 100%;
-        padding: 0.6rem 1rem 0.6rem 2.5rem;
-        border-radius: 40px;
-        font-family: "Patua One", serif;
-
-        font-size: 1.2rem;
-
-        border: 1px solid var(--primary-color);
-        background-color: var(--stroke-weak);
-      }
-      input[type="text"]:focus {
-        border: 1px solid var(--stroke-weak);
-        background-color: var(--stroke-weak);
-      }
-    }
-  }
 }
