@@ -15,6 +15,7 @@ const HomePage = () => {
               key={recipe.id}
               title={recipe.dish}
               image={recipe.picture}
+              category={recipe.category}
             />
           ))}
         </div>
