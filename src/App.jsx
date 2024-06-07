@@ -6,22 +6,27 @@ import HomePage from "./components/HomePage";
 import FormPage from "./components/FormPage";
 import ErrorPage from "./Pages/ErrorPage";
 import AboutPage from "./Pages/AboutPage";
+import { useState } from "react";
+import recipesJSON from "./data/database.json";
 
 function App() {
-    /*
-    For prep time 5min base time + 10 sec per ingredient rounded  (+ random between 1 and 5 min ?)
-  */
+    const [recipes, setRecipes] = useState(recipesJSON);
+
+    function addRecipe(recipe) {
+        setRecipes([recipe, ...recipes]);
+    }
+
     return (
         <>
             <Header />
             <Routes>
                 <Route
                     path="/"
-                    element={<HomePage />}
+                    element={<HomePage recipes={recipes} />}
                 />
                 <Route
                     path="/addRecipe"
-                    element={<FormPage />}
+                    element={<FormPage addRecipe={addRecipe} />}
                 />
                 <Route
                     path="/about"
