@@ -25,20 +25,6 @@ function App() {
         <Route path="/addRecipe" element={<FormPage addRecipe={addRecipe} />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />
-      </Routes>
-      <Footer />
-    </>
-  );
-  /*
-   */
-  return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/addRecipe" element={<FormPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="*" element={<ErrorPage />} />
         <Route path="/recipe/:id" element={<RecipeDetailPage />} />
       </Routes>
       <Footer />
