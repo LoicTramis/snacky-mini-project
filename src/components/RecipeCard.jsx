@@ -1,5 +1,6 @@
 import React from "react";
 import "./RecipeCard.css";
+import { Link } from "react-router-dom";
 
 const categoryColors = {
   Side: "#ffcc00",
@@ -18,19 +19,21 @@ const categoryColors = {
   Vegan: "#33cc99",
 };
 
-const RecipeCard = ({ title, image, category }) => {
+const RecipeCard = ({ id, title, image, category }) => {
   const backgroundColor = categoryColors[category] || "#007bff";
 
   return (
-    <div className="recipe-card">
-      <img src={image} alt={title} className="recipe-card-image" />
-      <div className="recipe-card-content">
-        <h3 className="recipe-card-title">{title}</h3>
+    <Link to={`/recipe/${id}`} className="recipe-card-link">
+      <div className="recipe-card">
+        <img src={image} alt={title} className="recipe-card-image" />
+        <div className="recipe-card-content">
+          <h3 className="recipe-card-title">{title}</h3>
+        </div>
+        <div className="recipe-card-category" style={{ backgroundColor }}>
+          <span>{category}</span>
+        </div>
       </div>
-      <div className="recipe-card-category" style={{ backgroundColor }}>
-        <span>{category}</span>
-      </div>
-    </div>
+    </Link>
   );
 };
 
