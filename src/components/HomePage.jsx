@@ -1,9 +1,8 @@
 import React from "react";
 import "./HomePage.css";
 import RecipeCard from "./RecipeCard.jsx";
-import recipes from "../data/database.json";
 
-const HomePage = () => {
+const HomePage = ({ recipes }) => {
   return (
     <div className="home-page">
       <main className="main-content">
