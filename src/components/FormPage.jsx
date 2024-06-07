@@ -8,7 +8,7 @@ function FormPage() {
     return (
         <div className="home-page">
             <main className="main-content">
-                <h1>Add a recipe</h1>
+                <h2>Add a recipe</h2>
                 <section>
                     <form>
                         <label htmlFor="dish-name">
