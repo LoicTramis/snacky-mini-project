@@ -1,3 +1,4 @@
+// src/pages/HomePage.js
 import React from "react";
 import "./HomePage.css";
 import RecipeCard from "./RecipeCard.jsx";
