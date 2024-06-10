@@ -1,12 +1,20 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function Navbar() {
+function Navbar({ search, setSearch }) {
+    const handleSearch = (e) => {
+        setSearch(e.currentTarget.value);
+    };
     return (
         <nav className="Navbar">
             <ul>
                 <li>
-                    <input type="text" />
+                    <input
+                        type="text"
+                        name="search"
+                        value={search}
+                        onChange={handleSearch}
+                    />
                 </li>
                 <li>
                     <NavLink to="/">Home</NavLink>

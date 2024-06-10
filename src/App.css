@@ -8,6 +8,10 @@ html {
     background-color: var(--dark-bg-color);
     color: var(--light-color);
 }
+body {
+    color: #252525;
+    background-color: #fff4d0;
+}
 
 h1,
 h2 {
