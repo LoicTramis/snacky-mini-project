@@ -12,6 +12,7 @@ function Navbar({ search, setSearch }) {
                     <input
                         type="text"
                         name="search"
+                        placeholder="Search a recipe or category"
                         value={search}
                         onChange={handleSearch}
                     />

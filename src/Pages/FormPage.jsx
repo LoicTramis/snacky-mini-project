@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./FormPage.css";
-/*
-"id": 52961,
-    "dish": "Budino Di Ricotta",
-    "category": "Dessert",
-    "cuisine": "Italian",
-    */
+
 function FormPage({ addRecipe }) {
     const navigate = useNavigate();
     const [recipe, setRecipe] = useState({

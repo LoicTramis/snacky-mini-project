@@ -7,7 +7,7 @@ const HomePage = ({ recipes }) => {
     return (
         <div className="home-page">
             <main className="main-content">
-                <h1>SNAKY APP</h1>
+                <h2>Welcome on SNACKY</h2>
                 <div className="recipe-cards-container">
                     {recipes.map((recipe) => (
                         <RecipeCard

@@ -1,0 +1,24 @@
+.about-card {
+    background-color: var(--stroke-weak);
+    width: 70vw;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    font-family: "Patua One", serif;
+
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+.about-meal {
+    display: flex;
+    flex-direction: row;
+
+    .col {
+        flex-direction: column;
+    }
+}
