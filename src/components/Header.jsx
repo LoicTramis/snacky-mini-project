@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import SnackyLogo from "/src/assets/snacky.svg";
 import "./Header.css";
 
-function Header() {
+function Header({ search, setSearch }) {
     return (
         <header className="Header">
             <section className="logoTitle">
@@ -13,7 +13,10 @@ function Header() {
                 />
                 <h1>Snacky</h1>
             </section>
-            <Navbar />
+            <Navbar
+                search={search}
+                setSearch={setSearch}
+            />
         </header>
     );
 }
