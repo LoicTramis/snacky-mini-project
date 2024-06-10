@@ -8,55 +8,42 @@ import ErrorPage from "./Pages/ErrorPage";
 import AboutPage from "./Pages/AboutPage";
 import { useState } from "react";
 import recipesJSON from "./data/database.json";
+import RecipeDetailPage from "./Pages/RecipeDetailPage";
 
 function App() {
-    const [recipes, setRecipes] = useState(recipesJSON);
-    const [search, setSearch] = useState("");
-    let filteredRecipes;
+  const [recipes, setRecipes] = useState(recipesJSON);
+  const [search, setSearch] = useState("");
+  let filteredRecipes;
 
-    function addRecipe(recipe) {
-        setRecipes([recipe, ...recipes]);
-    }
+  function addRecipe(recipe) {
+    setRecipes([recipe, ...recipes]);
+  }
 
-    if (search === "") {
-        filteredRecipes = recipes;
-    } else {
-        filteredRecipes = recipes.filter((recipe) => {
-            return (
-                recipe.dish.toLowerCase().includes(search.toLowerCase()) ||
-                recipe.cuisine.toLowerCase().startsWith(search.toLowerCase()) ||
-                recipe.category.toLowerCase().startsWith(search.toLowerCase())
-            );
-        });
-    }
+  if (search === "") {
+    filteredRecipes = recipes;
+  } else {
+    filteredRecipes = recipes.filter((recipe) => {
+      return (
+        recipe.dish.toLowerCase().includes(search.toLowerCase()) ||
+        recipe.cuisine.toLowerCase().startsWith(search.toLowerCase()) ||
+        recipe.category.toLowerCase().startsWith(search.toLowerCase())
+      );
+    });
+  }
 
-    return (
-        <>
-            <Header
-                search={search}
-                setSearch={setSearch}
-            />
-            <Routes>
-                <Route
-                    path="/"
-                    element={<HomePage recipes={filteredRecipes} />}
-                />
-                <Route
-                    path="/addRecipe"
-                    element={<FormPage addRecipe={addRecipe} />}
-                />
-                <Route
-                    path="/about"
-                    element={<AboutPage />}
-                />
-                <Route
-                    path="*"
-                    element={<ErrorPage />}
-                />
-            </Routes>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header search={search} setSearch={setSearch} />
+      <Routes>
+        <Route path="/" element={<HomePage recipes={filteredRecipes} />} />
+        <Route path="/addRecipe" element={<FormPage addRecipe={addRecipe} />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<ErrorPage />} />
+        <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
