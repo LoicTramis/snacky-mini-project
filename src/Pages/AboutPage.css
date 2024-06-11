@@ -1,6 +1,6 @@
 .about-card {
     background-color: var(--stroke-weak);
-    width: 70vw;
+    width: 40vw;
     margin: 2rem 0;
     padding: 1rem;
     border: 1px solid var(--secondary-color);
@@ -16,9 +16,25 @@
 }
 .about-meal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    p {
+        margin: 0.5rem 0;
+    }
+    p:last-child {
+        color: var(--secondary-color);
+    }
 
-    .col {
-        flex-direction: column;
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem auto;
+        width: 60%;
+        justify-content: space-around;
+        li {
+            list-style-type: none;
+            a > img {
+                border-radius: 10px;
+            }
+        }
     }
 }
