@@ -1,0 +1,24 @@
+.favorite-recipes-page {
+  padding: 20px;
+}
+
+.favorite-recipes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorite-recipe-item {
+  margin-bottom: 20px;
+}
+
+.favorite-recipe-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.ingredient-list {
+  list-style-type: none;
+  padding: 0;
+}
