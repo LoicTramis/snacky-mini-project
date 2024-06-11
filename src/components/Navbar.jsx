@@ -21,6 +21,9 @@ function Navbar({ search, setSearch }) {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
+          <NavLink to="/favorites">Favortites Recipes</NavLink>
+        </li>
+        <li>
           <NavLink to="/addRecipe">Add a recipe</NavLink>
         </li>
         <li>
