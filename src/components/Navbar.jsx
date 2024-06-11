@@ -12,6 +12,7 @@ function Navbar({ search, setSearch }) {
           <input
             type="text"
             name="search"
+            placeholder="Search a recipe or category"
             value={search}
             onChange={handleSearch}
           />
@@ -21,9 +22,6 @@ function Navbar({ search, setSearch }) {
         </li>
         <li>
           <NavLink to="/addRecipe">Add a recipe</NavLink>
-        </li>
-        <li>
-          <NavLink to="/favorites">Favortites Recipes</NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
