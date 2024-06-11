@@ -1,0 +1,28 @@
+.recipe-detail-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe-detail-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.recipe-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ingredient-list {
+  margin-top: 10px;
+  list-style-type: none;
+}
+.recipe-instructions {
+  margin-top: 10px;
+  list-style-type: none;
+  text-align: justify;
+  margin-bottom: 10px;
+}
