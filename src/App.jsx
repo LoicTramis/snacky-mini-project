@@ -9,6 +9,7 @@ import AboutPage from "./Pages/AboutPage";
 import { useState } from "react";
 import recipesJSON from "./data/database.json";
 import RecipeDetailPage from "./Pages/RecipeDetailPage";
+import FavoriteRecipesPage from "./Pages/FavoriteRecipesPage";
 
 function App() {
   const [recipes, setRecipes] = useState(recipesJSON);
@@ -40,6 +41,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+        <Route path="/favorites" element={<FavoriteRecipesPage />} />
       </Routes>
       <Footer />
     </>
