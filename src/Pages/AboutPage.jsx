@@ -32,7 +32,7 @@ function AboutPage() {
                             </li>
                         </ul>
                         <p>
-                            Favorite dishes: <em>Coq au vin</em> &bull; <em>Crème brûlée</em>
+                            Favourite dishes: <em>Coq au vin</em> &bull; <em>Crème brûlée</em>
                         </p>
                     </section>
                 </article>
@@ -64,7 +64,7 @@ function AboutPage() {
                             </li>
                         </ul>
                         <p>
-                            Favorite dishes: <em>Tartiflette</em> &bull; <em>Fraisier</em>
+                            Favourite dishes: <em>Tartiflette</em> &bull; <em>Fraisier</em>
                         </p>
                     </section>
                 </article>

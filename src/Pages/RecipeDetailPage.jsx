@@ -60,7 +60,7 @@ const RecipeDetailPage = () => {
                         <button
                             onClick={addToFavorites}
                             className="favorite-button">
-                            <Link to="/favorites">Add to Favorites List</Link>
+                            <Link to="/favorites">Add to Favourites List</Link>
                         </button>
                     </aside>
                 </div>

@@ -30,7 +30,7 @@ const FavoriteRecipesPage = () => {
         return (
             <div className="home-page">
                 <main className="main-content">
-                    <h2 style={{ marginTop: "10%" }}>No favorite recipes yet.</h2>
+                    <h2 style={{ marginTop: "10%" }}>No favourite recipes yet.</h2>
                 </main>
             </div>
         );
@@ -40,7 +40,7 @@ const FavoriteRecipesPage = () => {
         <div className="home-page">
             <main className="main-content">
                 <div className="favorite-recipes-page">
-                    <h1>Favorite recipes</h1>
+                    <h1>Favourite recipes</h1>
                     <ul className="favorite-recipes-list">
                         {favorites.map((recipe, index) => (
                             <li
